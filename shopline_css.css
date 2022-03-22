@@ -504,7 +504,7 @@ body{
     bottom: 50px;
     cursor: pointer;
 }
-.chat button img{
+.chat button svg{
     width: 50%;
     height: 50%;
     margin: 10px;
