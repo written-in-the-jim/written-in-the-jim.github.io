@@ -240,20 +240,20 @@ body{
 .moreservice{
     background-color: #F5F5F5;
 }
-.wrap{
+.row{
     width: 1200px;
     margin: auto;
 }
-.moreservice .wrap{
+.moreservice .row{
     display: flex;
     flex-wrap: wrap;
 }
-.moreservice .wrap .item{
+.moreservice .row .item{
     width: 350px;
     margin: 25px;
     text-align: center;
 }
-.moreservice .wrap .item .img{
+.moreservice .row .item .img{
     text-align: center;
     width: 130px;
     height: 130px;
@@ -261,7 +261,7 @@ body{
     border-radius: 50%;
     background-color: white;
 }
-.moreservice .wrap .item img{
+.moreservice .row .item img{
     margin: auto;
     padding: 25px 23px;
 }
@@ -275,7 +275,7 @@ body{
     display: flex;
     /* flex-wrap: wrap; */
 }
-.moreservice .wrap h2, .recommend .part h2{
+.moreservice .row h2, .recommend .part h2{
     width: 1200px;
     font-size: 35px;
     font-weight: bold;
