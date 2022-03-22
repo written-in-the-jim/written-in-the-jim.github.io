@@ -88,7 +88,7 @@ body{
 .header nav a:hover {
     color: blue;
 }
-.header .url{
+.header .bottom{
     display: inline-block;
     width: 60px;
     height: 30px;
@@ -99,7 +99,7 @@ body{
     margin: 10px 0px 10px 350px;
     
 }
-.header .url a{
+.header .bottom a{
     font-size: 15px;
     color: white;
     text-decoration: none;
