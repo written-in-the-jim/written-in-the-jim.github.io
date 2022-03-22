@@ -271,30 +271,30 @@ body{
     width: 1200px;
     margin: auto;
 }
-.recommend .part{
+.recommend .area{
     display: flex;
     /* flex-wrap: wrap; */
 }
-.moreservice .row h2, .recommend .part h2{
+.moreservice .row h2, .recommend .area h2{
     width: 1200px;
     font-size: 35px;
     font-weight: bold;
     text-align: center;
     padding: 20px 0px;
 }
-.recommend .part .item{
+.recommend .area .item{
     width: 230px;
     margin: 5px;
     overflow: hidden;
     text-align: center;
     margin-bottom: 10px;
 }
-.recommend .part .item img{
+.recommend .area .item img{
     width: 180px;
     height: 60px;
     margin: 50px 5px;
 }
-.recommend .part .item .special{
+.recommend .area .item .special{
     width: 50%;
 }
 .recommend .introd{
