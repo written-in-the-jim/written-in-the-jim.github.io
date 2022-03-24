@@ -1,142 +1,168 @@
-body{
-    padding-top: 125px;
+*{
+    margin: 0;
+    padding: 0;
 }
+body{
+    padding-top: 140px;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+    line-height: 200%;
+    margin-bottom: 10px;
+}
+
 /* donate */
 .donate{
     width: 100%;
-    height: 30px;
-    background-color: 	#FF8000;
+    background-color: #fe7200;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
 }
-.donate a{
-    font-size: 15px;
-    line-height: 30px;
-    text-decoration: none;
-    color: white;
+.donate .group{
+    width: 1520px;
+    margin: auto;
 }
-.donate .close{
+.donate .group a{
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    left: 550px;
-}
-.close a{
     text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
     color: white;
+}
+.donate .group .close{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 30px;
 }
 
-/* header-top */
-.header-top {
+/* icon_help_sign */
+.icon_help_sign{
+    text-align: right;
     width: 100%;
     background-color: black;
-    text-align: right;
-    border: none;
     position: fixed;
-    top: 30px;
+    top: 35px;
     left: 0;
 }
-.header-top a {
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-    line-height: 35px;
-    padding: 0 10px;
+.icon_help_sign .package{
+    width: 1520px;
+    margin: auto;
 }
-.header-top a:hover {
+.icon_help_sign .package .section{
+    margin: 0px 90px;
+}
+.icon_help_sign .package .section a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+.icon_help_sign .package .section a:hover{
     color: blue;
+}
+.icon_help_sign .package .section .icon{
+    vertical-align: center;
+    padding:  0px 15px;
+    border-right: 1px white solid;
 }
 
 /* header */
-.header {
+.header{
     width: 100%;
-    height: 60px;
-    border: none;
     background-color: white;
-    display: flex;
-    /* flex-wrap: wrap; */
     position: fixed;
-    top: 65px;
+    top: 70px;
     left: 0;
-
 }
-.header .logo img{
-    width: 150px;
-    height: 28px;
-    margin: 18px 50px 18px 110px;
+.header .bundle{
+    width: 1520px;
+    margin: auto;
 }
-.header nav {
-    text-align: left;
+.header .bundle .pack{
+    margin: 0px 80px;
+    display: flex;
 }
-.header nav a {
-    font-size: 15px;
-    color: black;
-    text-decoration: none;
+.header .bundle .logo h1 img{
+    width: 160px;
+    height: 30px;
+    margin: 20px;
+    vertical-align: middle;
+}
+.header .bundle nav{
+    flex-grow: 1;
+}
+.header .bundle nav a{
     display: inline-block;
-    margin: 21px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 27px 5px;
 }
-.header nav a img{
-    width: 10px;
-    height: 10px;
-    margin: auto 1px;
-    opacity: 70%;
-}
-.header nav a:hover {
+.header .bundle nav a:hover{
     color: blue;
 }
-.header .bottom{
-    display: inline-block;
-    width: 60px;
-    height: 30px;
+.header .bundle nav a img{
+    width: 10px;
+    height: 10px;
+}
+.header .bundle .btn_free{
+    width: 100px;
     background-color: blue;
     border-radius: 100px;
     text-align: center;
-    padding: 5px 17px;
-    margin: 10px 0px 10px 350px;
-    
+    padding: 10px;
+    margin: auto 100px;
 }
-.header .bottom a{
-    font-size: 15px;
+.header .bundle .btn_free a{
     color: white;
     text-decoration: none;
-    line-height: 30px;
 }
-.header a:hover{
+.header .bundle .btn_free a:hover{
     opacity: 70%;
 }
 
 /* main */
 .main{
-    width: 100%;
     background-color: #00142d;
     color: white;
-    display: flex;
-    /* flex-wrap: wrap; */
-    margin: auto;
 }
-.main .text{
+.main .wrap{
+    width: 1520px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.main .wrap .text{
     width: 696px;
-    padding: 100px 200px 100px 100px;
+    padding: 100px 50px 100px 100px;
     font-weight: bold;
     line-height: 150%;
 }
-.main .text h1{
-    font-size: 40px;
-}
-.main .text .special{
+.main .wrap .text .two{
     color: #228b22;
 }
-.main .text p{
-    font-size: 18px;
+.main .wrap .text p{
     font-weight: bold;
-    line-height: 40px;
     margin-bottom: 50px;
 }
-.main .text input{
+.main .wrap .text input{
     width: 350px;
     height: 30px;
     color: white;
@@ -149,23 +175,23 @@ body{
     color: white;
     font-size: 18px;
 }
-.main .text a{
+.main .wrap .text a{
     display: inline-block;
     width: 100px;
     height: 18px;
     padding: 10px;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     background-color: blue;
     border-radius: 100px;
     color: white;
     font-size: 18px;
     margin-left: 10px;;
 }
-.main .text a:hover{
+.main .wrap .text a:hover{
     opacity: 70%;
 }
-.main .pic{
+.main .wrap .pic{
     width: 474px;
     padding: 100px 10px;
 }
@@ -174,15 +200,7 @@ body{
 .about {
     width: 550px;
     text-align: center;
-    margin: auto;
-}
-.about h2{
-    font-size: 35px;
-    font-weight: bold;
-}
-.about p{
-    font-size: 16px;
-    line-height: 200%;
+    margin: 50px auto;
 }
 
 /* group */
@@ -192,7 +210,8 @@ body{
 }
 .row {
     display: flex;
-    /* flex-wrap: wrap; */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
 }
 .row .pic {
@@ -207,27 +226,22 @@ body{
     padding: 10px;
     margin: 10px;
 }
-.row .text h3{
-    font-size: 35px;
-    font-weight: blood;
-    line-height: 150%;
-}
 .row .text p{
-    font-size: 18px;
     margin-bottom: 30px;
-    line-height: 200%;
 }
-.list{
+.list ul{
     font-size: 17px;
-    width: 700px;
+    line-height: 30px;
+    width: 670px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
-.list div{
-    width: 350px;
+.list li{
+    width: 335px;
     margin-bottom: 10px;
 }
+
 .text a{
     text-decoration: none;
     color: blue;
@@ -235,25 +249,32 @@ body{
 .row:nth-child(2n - 1) {
     flex-direction: row-reverse;
 }
+.row:nth-child(4){
+    border: none;
+}
 
 /* moreservice */
 .moreservice{
+    padding: 50px 0px;
     background-color: #F5F5F5;
+    margin-bottom: 10px;
 }
-.row{
-    width: 1200px;
+.moreservice h2{
+    display: block;
     margin: auto;
 }
-.moreservice .row{
+.moreservice .wrap{
+    width: 1200px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
-.moreservice .row .item{
+.moreservice .wrap .item{
     width: 350px;
     margin: 25px;
     text-align: center;
 }
-.moreservice .row .item .img{
+.moreservice .wrap .item .img{
     text-align: center;
     width: 130px;
     height: 130px;
@@ -261,251 +282,234 @@ body{
     border-radius: 50%;
     background-color: white;
 }
-.moreservice .row .item img{
-    margin: auto;
-    padding: 25px 23px;
+.moreservice .wrap .item img{
+    padding: 20px 18px;
+}
+.moreservice .wrap .item p{
+    font-size: 15px;
 }
 
-/* recommend */
-.recommend{
+/* brand */
+.brand{
     width: 1200px;
-    margin: auto;
+    margin: 10px auto;
 }
-.recommend .area{
+.brand .part{
     display: flex;
-    /* flex-wrap: wrap; */
 }
-.moreservice .row h2, .recommend .area h2{
+.brand .part h2{
     width: 1200px;
-    font-size: 35px;
-    font-weight: bold;
     text-align: center;
     padding: 20px 0px;
 }
-.recommend .area .item{
+.brand .part .item{
     width: 230px;
     margin: 5px;
     overflow: hidden;
     text-align: center;
     margin-bottom: 10px;
 }
-.recommend .area .item img{
+.brand .part .item img{
     width: 180px;
-    height: 60px;
+    height: 90px;
     margin: 50px 5px;
 }
-.recommend .area .item .special{
+.brand .part .item .sole{
     width: 50%;
 }
-.recommend .introd{
+.brand .introd{
     width: 1200px;
     height: 250px;
     margin: auto;
     display: flex;
-    /* flex-wrap: wrap; */
     margin-bottom: 25px;
 
 }
-.recommend .introd .desc{
+.brand .introd .desc{
     width: 560px;
     padding: 10px;
 }
-.recommend .introd .desc a{
+.brand .introd .desc a{
     color: blue;
     text-decoration: none;
     font-size: 18px;
     line-height: 36px;
 }
-.recommend .introd .desc p{
+.brand .introd .desc p{
     font-size: 18px;
+    line-height: 28px;
 }
-.recommend .introd .desc .bottom{
+.brand .introd .desc .under{
     display: block;
     margin-top: 80px;
 }
-.recommend .introd .pic{
+.brand .introd .pic{
     width: 580px;
 }
-.recommend .introd .pic img{
+.brand .introd .pic img{
     width: 100%;
     margin: 0px 25px;
 }
 
-/* end */
-.end{
-    width: 100%;
-    height: 490px;
-    margin: auto;
+/* publicity */
+.publicity{
     display: flex;
-    /* flex-wrap: wrap; */
-    background-color: #032249;
+    background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right;
+    height: 430px;
 }
-.end .pic{
-    width: 600px;
-    overflow: hidden;
-    margin-left: 100px;
+.publicity .group{
+    width: 1520px;
+    margin: auto;
 }
-.end .pic img{
-    margin-top: 80px;
+.publicity .group .title{
+    width: 500px;
+    margin: 100px 0px 10px 200px;
+    padding-left: 300px;
 }
-.end .title{
-    margin: 100px 0px 10px 100px;
-}
-.end .title h2{
+.publicity .group .title h2{
     color: white;
     font-size: 45px;
     margin-bottom: 50px;
 }
-.end .thing{
+.publicity .group .title .thing{
     width: 350px;
-    height: 50px;
+    text-align: center;
     border-radius: 100px;
     background-color: blue;
 }
-.end .thing a{
+.publicity .group .title .thing a{
     display: block;
     font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 10px 100px;
 }
-.end .thing a:hover{
+.publicity .group .title .thing a:hover{
     opacity: 70%;
 }
 
-/* footer-top */
-.footer-top{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+.footer{
     background-color: #00142d;
 }
-.footer-top .divider{
-    width: 100%;
-    margin: 30px 100px;
+.footer .group{
+    width: 1520px;
+    margin: auto;
 }
-.footer-top .divider hr{
-    background-color: gray;
-    width: 1300px;
-    height: 1px;
-    border: none;
-}
-.footer-top .menu{
-    width: 100px;
-    margin: 5px 10px 20px 110px;
-    margin-right: -45px;
-    color: white;
+.divider, .footer .group .overall{
+    margin: 0px 30px;
     display: flex;
-    flex-direction: column;
 }
-.footer-top .solve{
-    width: 115px;
+.divider{
+    padding: 15px 0px;
 }
-.footer-top .other{
-    width: 250px;
+.divider hr{
+    background-color: gray;
+    border: none;
+    width: 1400px;
+    height: 1px;
 }
-.footer-top .menu h3{
+.footer .group .menu{
+    width: 150px;
+    margin: 15px;
+    color: white;
+}
+.footer .group .overall .sole{
+    margin-left: 50px;
+}
+.footer .group .other{
+    width: 220px;
+}
+.footer .group .menu h3{
     margin-bottom: 20px;
     font-size: 16px;
 }
-.footer-top .menu a{
+.footer .group .menu a{
     font-size: 15px;
+    line-height: 30px;
     color: gray;
-    margin: 10px 0px;
     text-decoration: none;
 }
-.footer-top .menu a:hover{
+.footer .group .menu a:hover{
     color: white;
 }
-
-/* news */
-.news{
-    height: 100px;
-    background-color: #00142d;
+.footer .group .btn-news{
     text-align: right;
-    padding-top: 50px;
+    margin: 60px 30px;
+    padding: 35px 0px;
 }
-.news a{
+.footer .group .btn-news a{
     text-decoration: none;
     color: black;
-    border: 2px solid #ccc;
     background-color: #ccc;
     font-weight: bold;
     padding: 10px 50px;
     margin-right: 100px;
 }
-.news a:hover{
+.footer .group .btn-news a:hover{
     color: white;
 }
-
-/* footer-bottom */
-.footer-bottom{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    background-color: #00142d;
+.bottom{
     color:white;
     padding-bottom: 30px;
 }
-.footer-bottom .divider{
-    width: 100%;
-    margin: 30px 100px 2px;
-}
-.footer-bottom .divider hr{
-    background-color: gray;
-    border: none;
-    height: 1px;
-    width: 1300px;
-}
-.footer-bottom .control{
-    width: 300px;
-    margin: 50px;
-    margin: auto;
-}
-.footer-bottom .inf{
+.bottom .wrap{
+    margin: 0px 30px;
     display: flex;
+    flex-wrap: wrap;
 }
-.footer-bottom .inf a + a::before{
-    content: '|';
-    color: white;
-}
-.footer-bottom .inf a{
-    text-decoration: none;
-    color: white;
-    padding: 6px 2px;
+.bottom .inf, .bottom .app, .bottom .copy{
+    width: 380px;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
 }
-.footer-bottom .inf a:hover{
+.bottom .inf a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px;
+    margin: 30px 0px;
+    border-right: 1px solid white;
+}
+.bottom .wrap .inf :last-child{
+    border: none;
+}
+.bottom .inf a:hover, .bottom .app i:hover{
     color: blue;
 }
-.footer-bottom .app img{
+.bottom .app a i{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    background-color:#032249;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    margin-left: 15px;
+    margin: 30px 20px 30px 0px;
 }
-.footer-bottom .copy{
+.bottom .copy{
     font-size: 15px;
     line-height: 150%;
+    color: gray;
     text-align: center;
 }
 
 /* chat */
 .chat button{
     background-color: 	#46A3FF;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: none;
     position: fixed;
     opacity: 0.5;
-    right: 50px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 30px;
     cursor: pointer;
 }
 .chat button svg{
     width: 50%;
     height: 50%;
-    margin: 10px;
+    margin: 15px 10px;
 }
