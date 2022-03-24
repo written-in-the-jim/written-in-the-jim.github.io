@@ -6,52 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         *{
             margin: 0;
             padding: 0;
         }
-        .img1{
-            text-align: center;
-        }
-        
-        .topic{
+        .help_center{
+            width: 100%;
+            top: 0px;
+            position: fixed;
             background-color: aquamarine;
             text-align: right;
             padding: 10px;
-            margin: auto;
-            
         }
-        .topic a{
+        .help_center a{
             padding: 10px;
             text-align: center;
             color: black;
             text-decoration: none;
+        }
+        .help_center a:hover{
+            background-color: blue;
+            color: aliceblue;
+        }
+
+
+        header{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: aliceblue;
+            top: 36px;
+            position: fixed;
 
         }
-        
-        .manu{
-            background-color: white;
-            text-align: left;
+        .logo{
+            width: 200px;
             margin: 20px;
-            
+            padding: 0px 195px;
         }
-        p{
-            display:inline ;
-            padding: 150px;
-            font-size:xx-large;
+        nav{
+            color: black;
+            flex-grow: 1;
+            padding: 10px;
         }
+        nav a{
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover{
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 50px;
+        }
+        .btn_freetry{
+            display: inline-block;
+            background-color: deeppink;
+            color: aliceblue;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+
+        .main_screen{
+            display: flex;
+            background-color: #010c2b;
+            align-items: center;
+        }
+        .main_screen_txt{
+            width: 50%;
+            margin: 150px;
+            text-align: left;
+            padding: 50px;
+        }
+        .topic{
+            font-size: 25px;
+            margin: 10px;
+        }
+        .topic h1{
+            color: aliceblue;
+        }
+        .topic h2{
+            color: green;
+            padding: 0px 0px 30px;
+        }
+        .topic p{
+            display: block;
+            color: aliceblue;
+            font-size: 20px;
+            padding: 0px 0px 40px;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+            color: aliceblue;
+            border: none;
+            background-color:#010c2b;
+            border-bottom-style:solid;
+            font-size: 18px;
+            margin: 10px;
+        }
+        .main_img{
+            width: 50%;
+        }
+        
+        
+        
         .b{
             text-align: center;
             color: darkgrey;
             padding: 150px;
         }
-        .manu a{
-            color: black;
-            text-decoration: none;
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 10px;
-        } 
         .manu a:hover{
             color: blue;
 
@@ -80,34 +147,38 @@
             margin: auto;
             box-sizing: border-box;
         }
+        .txt{
+            width: 50%;
+            flex-wrap: wrap;
+        }
         
         .txt h2{
-            font-size: 40px;
+            font-size: 30px;
             line-height: auto;
-            padding: 20px 50px;
+            padding: 10px 50px;
         }
         .txt .par{
-            width: 600px;
+            width: 500px;
             font-size: 15px;
             padding: 30px 50px 30px;
         }
         
         .txt .list{
-            width: 644px;
-            font-size: 18px;
+            width: 500px;
+            font-size: 12px;
             display: flex;
             flex-wrap: wrap;
-            text-indent: -1.5em;
-            padding: 10px 50px 20px;
+            padding: 0px 50px 80px;
 
         }
         .txt .list div{
-            width: 260px;
-            font-size: 15px;
+            width: 250px;
             margin-bottom: 8px;
-            padding: 0 30px;
-            float: left;
 
+        }
+        .pic{
+            width: 100%;
+            text-align: center;
         }
         
         .group2{
@@ -120,7 +191,7 @@
         
         .txt a {
             text-decoration: none;
-            padding: 50px;
+            padding: 0px 50px 0px;
         }
         
         .wrap{
@@ -142,7 +213,6 @@
             width: 100%;
         }
         .box{
-            width: 1960px;
             height: 850px;
             margin: auto;
             background-color: lightcyan;
@@ -183,31 +253,31 @@
             text-align: center;
         }
         .bot{
-            margin: auto;
-            width: 100%;
-            padding: 80px;
-            display: flex;
-            flex-wrap: wrap;
             text-align: center;
             background-color: #190d3f;;
-
-
+            
+        }
+        .b000{
+            display: flex;
             
         }
         .bbb{
-            width: 250px;
+            width: 15%;
+            padding: 20px;
         }
         .nav-item{
             padding: 15px;
-        }
-        .bbb a{
-            font-size: 18px;
-            color: lightblue
+            list-style: none;
 
         }
+        .bbb a{
+            font-size: 10px;
+            color: lightblue;
+            text-decoration: none;
+        }
         .bbb h4{
-            padding: 40px;
-            font-size: 25px;
+            padding: 10px;
+            font-size: 22px;
             color: azure
             
         }
@@ -238,7 +308,7 @@
         }
         .bottom a:hover
         {
-            font-size: 30px;
+            font-size: 20px;
             color: aqua;
         }
 
@@ -247,26 +317,49 @@
     </style>
 </head>
 <body>
-    
-    <div class="topic">
+    <div class="help_center">
         <strong><em><a href="#">幫助中心 </a></em></strong>
         <strong><em><a href="#">登入網站 </a></em></strong>
-        
     </div>
-    <div class="manu">
-        <p> <strong> SHOPLINE</strong></p>
-        <a href="#">開店服務</a>
-        <a href="#">方案費用</a>
-        <a href="#">客戶案例</a>
-        <a href="#">開店說明會</a>
-        <a href="#">開店諮詢</a>
-        <a href="#">更多解決方案</a>
-        <a href="#">其他資源</a>
 
-    </div>
-    <div class="img1">
-        <img src="https://i.picsum.photos/id/799/1960/700.jpg?hmac=bixLJwOluyaBJ7a0ZiV4sk1FcAYBxFLA7GDyqZzaacc">
-        
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="https://img.shoplineapp.com/media/image_clips/60811bb98a60d74a03808d4d/original.png?1619073977" width="200">
+            </a>
+        </div>
+        <nav>
+            <a href="#">開店服務</a>
+            <a href="#">方案費用</a>
+            <a href="#">客戶案例</a>
+            <a href="#">開店說明會</a>
+            <a href="#">開店諮詢</a>
+            <a href="#">更多解決方案</a>
+            <a href="#">其他資源</a>
+        </nav>
+        <a href="#" class="btn_freetry">免費試用</a>
+    </header>
+
+    <div class="main_screen">
+        <div class="main_screen_txt">
+            <div class="topic">
+                <h1>
+                想在哪開店創業?
+                </h1>
+                <h2>
+                門市必備零售POS系統
+                </h2>
+                <p>
+                    超過 35 萬品牌使用！從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！
+                </p>
+            </div>
+            
+            <input type="email" placeholder="請在此輸入點子信箱(可隨時更換)">
+            <a href="#" class="btn_freetry">免費試用</a>
+        </div>
+        <div class="main_img">
+            <img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.webp?source_format=png">
+        </div>
     </div>
 
     <div class="par1">
@@ -384,15 +477,7 @@
         </div>
     </div>
 
-    <br>
-    <br>
-    <br>    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
     <div class="box">
         <h3>更多功能與服務</h3>
         <div class="wrap">
@@ -427,13 +512,7 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>    
-    <br>
-    <br>
-    <br>
-    <br>
+    
     <div class="like">
         <h1> <strong>人氣品牌</strong> 一致推薦使用</h1>
         <div class="couple">
@@ -455,81 +534,80 @@
     <div class="img2">
         <img src="https://assets.juksy.com/files/articles/71358/800x_100_w-59d1a719817c6.jpg" width="1500" height="500">
         <img src="https://www.laoziliao.net/fs/img/7a/7a7fdb06454a88765ae2f2bb8e1659ce.webp">
-        <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        
+    
     </div>
         
     <div class="bot">
-        <div class="bbb">
-            <h4>SHOPLINE</h4><br>
-            <li class="nav-item"><a class="nav-link" href="/about">關於我們</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/about/team">認識團隊</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/careers">人才招募</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/cooperate">合作機會</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/selectedpartners">精選夥伴</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/about/press">媒體報導</a></li><br>
-            
-        </div>
-        <div class="bbb">
-            <h4>我要開店</h4>
-            <br>
-            <li class="nav-item"><a class="nav-link" href="/about/pricing">方案費用</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/about/pricing/module">功能模組</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/showcase">客戶案例</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://seminar.shopline.tw" target="_blank">開店說明會</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://consultation.shopline.tw/" target="_blank">開店諮詢</a></li><br>
-            
-        </div>
-        <div class="bbb">
-            <h4>功能特色</h4><br>
-            <li class="nav-item"><a href="/features/online-store" class="nav-link">網路開店</a></li><br>
-            <li class="nav-item"><a href="/social-commerce/features" class="nav-link">社群購物</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/pos/features">零售 POS</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/features/online-store-builder">網路商店</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/features/web-building">網站製作</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/features/logistics">電商物流</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/features/order-management">訂單管理</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/features/landing-page">一頁商店</a></li><br>
-            
-        </div>
-        <div class="bbb">
-            <h4>開店資源</h4><br>
-            <li class="nav-item"><a class="nav-link" href="/online-store-setup">開店秘技</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/templates">版型主題</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/faq/overview">新手問答</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://pos.shopline.tw/functioncase/hardware/" target="_blank">POS 硬體</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://blog.shopline.tw/shopline-feature-instruction/" target="_blank">最新功能</a></li><br>
-            
-        </div>
-        <div class="bbb">
-            <h4>更多解決方案</h4><br>
-            <li class="nav-item"><a class="nav-link" href="/enterprise">企業旗艦方案</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="/cross-border">跨境電商方案</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://marketing.shoplineapp.com/?utm_source=shopline&utm_medium=shopline-footer&utm_campaign=ads-project" target="_blank">廣告計畫方案</a></li><br>
-            
-        </div>
-        <div class="bbb">
-            <h4>其他資源</h4><br>
-            <li class="nav-item"><a class="nav-link" href="https://blog.shopline.tw/" target="_blank">電商教室</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://academy.shopline.tw" target="_blank">充電工作坊</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://stories.shopline.tw/" target="_blank">創品牌</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://course.shopline.tw/" target="_blank">電商成長學苑</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://trends.shopline.tw/" target="_blank">電商數據庫</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://partners.shopline.tw/line-account" target="_blank">官方帳號</a></li><br>
-        </div>
-        <div class="bbb">
-            <h4>應用案例</h4><br>
-            <li class="nav-item"><a class="nav-link" href="https://features.shopline.tw/payments">金流與物流</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://features.shopline.tw/payments" target="_blank">Payments</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://partneropstw.shoplineapp.com/" target="_blank">網紅口碑行銷</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://consultation.shopline.tw/pos" target="_blank">實體零售</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://features.shopline.tw/instagram-live" target="_blank">IG 直播 +1</a></li><br>
-            <li class="nav-item"><a class="nav-link" href="https://marketing.shopline.tw/facebook-integration-features" target="_blank">社群工具包</a></li><br>
-            
+        <div class="b000">
+            <div class="bbb">
+                <h4>SHOPLINE</h4><br>
+                <li class="nav-item"><a class="nav-link" href="/about">關於我們</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/about/team">認識團隊</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/careers">人才招募</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/cooperate">合作機會</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/selectedpartners">精選夥伴</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/about/press">媒體報導</a></li><br>
+                
+            </div>
+            <div class="bbb">
+                <h4>我要開店</h4>
+                <br>
+                <li class="nav-item"><a class="nav-link" href="/about/pricing">方案費用</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/about/pricing/module">功能模組</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/showcase">客戶案例</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://seminar.shopline.tw" target="_blank">開店說明會</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://consultation.shopline.tw/" target="_blank">開店諮詢</a></li><br>
+                
+            </div>
+            <div class="bbb">
+                <h4>功能特色</h4><br>
+                <li class="nav-item"><a href="/features/online-store" class="nav-link">網路開店</a></li><br>
+                <li class="nav-item"><a href="/social-commerce/features" class="nav-link">社群購物</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/pos/features">零售 POS</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/features/online-store-builder">網路商店</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/features/web-building">網站製作</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/features/logistics">電商物流</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/features/order-management">訂單管理</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/features/landing-page">一頁商店</a></li><br>
+                
+            </div>
+            <div class="bbb">
+                <h4>開店資源</h4><br>
+                <li class="nav-item"><a class="nav-link" href="/online-store-setup">開店秘技</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/templates">版型主題</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/faq/overview">新手問答</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://pos.shopline.tw/functioncase/hardware/" target="_blank">POS 硬體</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://blog.shopline.tw/shopline-feature-instruction/" target="_blank">最新功能</a></li><br>
+                
+            </div>
+            <div class="bbb">
+                <h4>更多解決方案</h4><br>
+                <li class="nav-item"><a class="nav-link" href="/enterprise">企業旗艦方案</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="/cross-border">跨境電商方案</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://marketing.shoplineapp.com/?utm_source=shopline&utm_medium=shopline-footer&utm_campaign=ads-project" target="_blank">廣告計畫方案</a></li><br>
+                
+            </div>
+            <div class="bbb">
+                <h4>其他資源</h4><br>
+                <li class="nav-item"><a class="nav-link" href="https://blog.shopline.tw/" target="_blank">電商教室</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://academy.shopline.tw" target="_blank">充電工作坊</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://stories.shopline.tw/" target="_blank">創品牌</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://course.shopline.tw/" target="_blank">電商成長學苑</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://trends.shopline.tw/" target="_blank">電商數據庫</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://partners.shopline.tw/line-account" target="_blank">官方帳號</a></li><br>
+            </div>
+            <div class="bbb">
+                <h4>應用案例</h4><br>
+                <li class="nav-item"><a class="nav-link" href="https://features.shopline.tw/payments">金流與物流</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://features.shopline.tw/payments" target="_blank">Payments</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://partneropstw.shoplineapp.com/" target="_blank">網紅口碑行銷</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://consultation.shopline.tw/pos" target="_blank">實體零售</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://features.shopline.tw/instagram-live" target="_blank">IG 直播 +1</a></li><br>
+                <li class="nav-item"><a class="nav-link" href="https://marketing.shopline.tw/facebook-integration-features" target="_blank">社群工具包</a></li><br>
+                
+            </div>
+    
         </div>
         
         
