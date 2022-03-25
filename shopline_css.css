@@ -253,28 +253,28 @@ p{
     border: none;
 }
 
-/* moreservice */
-.moreservice{
+/* detial */
+.detial{
     padding: 50px 0px;
     background-color: #F5F5F5;
     margin-bottom: 10px;
 }
-.moreservice h2{
+.detial h2{
     display: block;
     margin: auto;
 }
-.moreservice .wrap{
+.detial .wrap{
     width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
-.moreservice .wrap .item{
+.detial .wrap .item{
     width: 350px;
     margin: 25px;
     text-align: center;
 }
-.moreservice .wrap .item .img{
+.detial .wrap .item .img{
     text-align: center;
     width: 130px;
     height: 130px;
@@ -282,10 +282,10 @@ p{
     border-radius: 50%;
     background-color: white;
 }
-.moreservice .wrap .item img{
+.detial .wrap .item img{
     padding: 20px 18px;
 }
-.moreservice .wrap .item p{
+.detial .wrap .item p{
     font-size: 15px;
 }
 
