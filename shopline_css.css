@@ -33,7 +33,7 @@ p{
     left: 0;
 }
 .donate .group{
-    width: 1520px;
+    width: 1200px;
     margin: auto;
 }
 .donate .group a{
@@ -45,7 +45,7 @@ p{
 }
 .donate .group .close{
     display: inline-block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 30px;
 }
@@ -60,7 +60,7 @@ p{
     left: 0;
 }
 .icon_help_sign .package{
-    width: 1520px;
+    width: 1200px;
     margin: auto;
 }
 .icon_help_sign .package .section{
@@ -144,7 +144,7 @@ p{
     color: white;
 }
 .main .wrap{
-    width: 1520px;
+    width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-around;
