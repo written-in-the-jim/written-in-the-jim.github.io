@@ -23,8 +23,8 @@ p{
     margin-bottom: 10px;
 }
 
-/* donate */
-.donate{
+/* grant */
+.grant{
     width: 100%;
     background-color: #fe7200;
     text-align: center;
@@ -32,18 +32,18 @@ p{
     top: 0;
     left: 0;
 }
-.donate .group{
+.grant .group{
     width: 1200px;
     margin: auto;
 }
-.donate .group a{
+.grant .group a{
     display: inline-block;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
     color: white;
 }
-.donate .group .close{
+.grant .group .close{
     display: inline-block;
     position: fixed;
     top: 0;
@@ -351,40 +351,40 @@ p{
     margin: 0px 25px;
 }
 
-/* publicity */
-.publicity{
+/* world */
+.world{
     display: flex;
     background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right;
     height: 430px;
 }
-.publicity .group{
+.world .group{
     width: 1520px;
     margin: auto;
 }
-.publicity .group .title{
+.world .group .title{
     width: 500px;
     margin: 100px 0px 10px 200px;
     padding-left: 300px;
 }
-.publicity .group .title h2{
+.world .group .title h2{
     color: white;
     font-size: 45px;
     margin-bottom: 50px;
 }
-.publicity .group .title .free{
+.world .group .title .free{
     width: 350px;
     text-align: center;
     border-radius: 100px;
     background-color: blue;
 }
-.publicity .group .title .free a{
+.world .group .title .free a{
     display: block;
     font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 10px 100px;
 }
-.publicity .group .title .free a:hover{
+.world .group .title .free a:hover{
     opacity: 70%;
 }
 
