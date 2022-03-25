@@ -371,20 +371,20 @@ p{
     font-size: 45px;
     margin-bottom: 50px;
 }
-.publicity .group .title .thing{
+.publicity .group .title .free{
     width: 350px;
     text-align: center;
     border-radius: 100px;
     background-color: blue;
 }
-.publicity .group .title .thing a{
+.publicity .group .title .free a{
     display: block;
     font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 10px 100px;
 }
-.publicity .group .title .thing a:hover{
+.publicity .group .title .free a:hover{
     opacity: 70%;
 }
 
@@ -395,7 +395,7 @@ p{
     width: 1520px;
     margin: auto;
 }
-.divider, .footer .group .overall{
+.divider, .footer .group .all{
     margin: 0px 30px;
     display: flex;
 }
@@ -413,9 +413,7 @@ p{
     margin: 15px;
     color: white;
 }
-.footer .group .overall .sole{
-    margin-left: 50px;
-}
+
 .footer .group .other{
     width: 220px;
 }
@@ -432,12 +430,12 @@ p{
 .footer .group .menu a:hover{
     color: white;
 }
-.footer .group .btn-news{
+.footer .group .btn-covid{
     text-align: right;
     margin: 60px 30px;
     padding: 35px 0px;
 }
-.footer .group .btn-news a{
+.footer .group .btn-covid a{
     text-decoration: none;
     color: black;
     background-color: #ccc;
@@ -445,7 +443,7 @@ p{
     padding: 10px 50px;
     margin-right: 100px;
 }
-.footer .group .btn-news a:hover{
+.footer .group .btn-covid a:hover{
     color: white;
 }
 .bottom{
@@ -457,13 +455,13 @@ p{
     display: flex;
     flex-wrap: wrap;
 }
-.bottom .inf, .bottom .app, .bottom .copy{
+.bottom .information, .bottom .app, .bottom .copy{
     width: 380px;
     padding: 10px;
     margin: 10px;
     text-align: center;
 }
-.bottom .inf a{
+.bottom .information a{
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -471,10 +469,10 @@ p{
     margin: 30px 0px;
     border-right: 1px solid white;
 }
-.bottom .wrap .inf :last-child{
+.bottom .wrap .information :last-child{
     border: none;
 }
-.bottom .inf a:hover, .bottom .app i:hover{
+.bottom .information a:hover, .bottom .app i:hover{
     color: blue;
 }
 .bottom .app a i{
