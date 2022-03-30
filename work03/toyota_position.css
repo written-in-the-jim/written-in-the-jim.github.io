@@ -1,0 +1,172 @@
+/* 共同設定 */
+h2{
+    font-size: 50px;
+    line-height: 200%;
+}
+h3{
+    font-size: 30px;
+    line-height: 200%;
+    margin: 10px;
+}
+h4{
+    font-size: 25px;
+    line-height: 150%;
+    color: red;
+}
+h5{
+    font-size: 20px;
+    line-height: 150%;
+    display: inline;
+    background-color: black;
+    color: white;
+}
+p{
+    font-size: 18px;
+    line-height: 150%;
+    margin: 10px;
+}
+ul li::before{
+    content: '▪';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 25px;
+    color: red;
+    line-height: 100%;
+    margin-right: 10px;
+}
+ul li{
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+span{
+    writing-mode: vertical-lr;
+    font-size: 100px;
+    line-height: 50%;
+    font-weight:lighter;
+}
+
+.manipulate_sole, .manipulate_pair{
+    width: 950px;
+    height: 800px;
+    position: relative;
+    margin: 200px auto 500px;
+} 
+.decorate{
+    background-color: #F4F4F4;
+}
+.main-pic{
+    position: relative;
+    cursor: pointer;
+}
+.introduce{
+    height: 370px;
+    background-color: #000000;
+    color: white;
+}
+.introduce h2{
+    height: 80px;
+    padding: 30px 10px 40px 10px;
+    background-color: #ae0014;
+}
+.innovation{
+    padding: 10px 30px;
+    background-color: #efefef;
+}
+.divider{
+    display: flex;
+    flex-wrap: wrap;
+}
+.divider h4{
+    width: 250px;
+}
+.divider hr{
+    width: 350px;
+    height: 1px;
+    margin: 15px 10px;
+    border: none;
+    background-color: red;
+    text-align: center;
+}
+
+/* 差異設定 */
+/* manipulate_sole */
+.manipulate_sole span{
+    margin: 0px 30px 0px 0px;
+    text-align: left;
+}
+.manipulate_sole .decorate{
+    width: 500px;
+    height: 285px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+.manipulate_sole > a > img{
+    position: relative;
+    top: -50px;
+    left: 830px;
+    z-index: 1;
+}
+.manipulate_sole img{
+    top: 130px;
+    left: 110px;
+}
+.manipulate_sole .introduce{
+    width: 350px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.manipulate_sole h2{
+    text-align: left;
+}
+.manipulate_sole .innovation{
+    width: 620px;
+    height: 290px;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+}
+/* manipulate_pair */
+.manipulate_pair{
+    height: 680px;
+}
+.manipulate_pair .decorate{
+    width: 500px;
+    height: 360px;
+    position: absolute;
+    top: 60px;
+    left: 260px;
+}
+.manipulate_pair img{
+    left: -50px;
+    top: 130px;
+}
+.manipulate_pair .introduce{
+    width: 360px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.manipulate_pair .introduce h2{
+    text-align: right;
+}
+.manipulate_pair span{
+    margin: 0px 0px 0px 30px;
+    text-align: right;
+}
+.manipulate_pair > a > img{
+    position: relative;
+    left: 0px;
+    top: -60px;
+    z-index: 1;
+}
+.manipulate_pair .innovation{
+    width: 680px;
+    height: 180px;
+    position: absolute;
+    bottom: 00px;
+    left: 210px;
+}
+.manipulate_pair .divider hr{
+    width: 410px;
+}
