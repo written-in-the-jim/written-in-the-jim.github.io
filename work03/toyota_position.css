@@ -157,8 +157,6 @@ span{
 .manipulate_pair > a > img{
     position: relative;
     left: 0px;
-    top: -60px;
-    z-index: 1;
 }
 .manipulate_pair .innovation{
     width: 680px;
