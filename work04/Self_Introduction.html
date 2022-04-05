@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self_Introduction</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .self_introduce{
+            width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            
+        }
+        .group{
+            width: 956px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            
+        }
+        img{
+            
+            width: 30%;
+            border-radius: 50px;
+            
+        }
+        .idol{
+            width: 300px;
+            height: 300px;
+        }
+        .information{
+            text-align: left;
+            margin: 20px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="self_introduce">
+        <div class="group">
+            <div class="img_self">
+                <img id="jim" src="" alt="">
+            </div>
+            <div class="information">
+                <h2>姓名:</h2>
+                <p></p>
+                <h2>Email:</h2>
+                <p></p>
+                <h2>學校:</h2>
+                <p></p>
+                <h2>興趣:</h2>
+                <p></p>
+                
+            </div>
+            <div class="idolgroup">
+                <img class="idol" src="" >
+                <img class="idol" src="" >
+                <img class="idol" src="" >
+            </div>
+        </div>
+        
+    </div>
+    <script>
+
+        let p = document.querySelectorAll("p");
+        let content = ["鄭博駿", "jlasvcx95105@gmail.com", "中華大學", "sing"];
+        let selfimg = document.getElementById("jim")
+        let idolgroup = document.querySelectorAll(".idolgroup img")
+        
+        
+        const selfimgUrl ="https://raw.githubusercontent.com/written-in-the-jim/FileStorage/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202022-04-05%20231445.png"
+        
+        selfimg.src = selfimgUrl;
+        content.forEach((info, index) => {p[index].innerText = content[index]});
+        
+        const idolArray =[
+        "https://images.chinatimes.com/newsphoto/2022-03-22/656/20220322005325.jpg",
+            "https://i.epochtimes.com/assets/uploads/2019/07/190709052019100707-450x300.jpg",
+            "https://i.ytimg.com/vi/xGr53sCo62c/maxresdefault.jpg",
+        ];
+        
+        idolArray.forEach((t, index)=>{idolgroup[index].setAttribute("src", idolArray[index])})
+        
+
+    </script>
+
+</body>
+</html>
