@@ -12,232 +12,118 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="shoplinerwd.css">
     <style>
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        [class*='col-']{
-            padding-left: 15px;
-            padding-left: 15px;
-            background-color: #ccc;
-            box-sizing: border-box;
-        }
-        .col-1{width: 8.333333%;}
-        .col-2{width: 16.666666%;}
-        .col-3{width: 25%;}
-        .col-4{width: 33.333333%;}
-        .col-5{width: 41.666666%;}
-        .col-6{width: 50%;}
-        .col-7{width: 58.333333%;}
-        .col-8{width: 66.666666%;}
-        .col-9{width: 75%;}
-        .col-10{width: 883.333333%;}
-        .col-11{width: 91.666666%;}
-        .col-12{width: 100%;}
 
-        @media screen and (min-width:768px){
-        .col-md-1{width: 8.333333%;}
-        .col-md-2{width: 16.666666%;}
-        .col-md-3{width: 25%;}
-        .col-md-4{width: 33.333333%;}
-        .col-md-5{width: 41.666666%;}
-        .col-md-6{width: 50%;}
-        .col-md-7{width: 58.333333%;}
-        .col-md-8{width: 66.666666%;}
-        .col-md-9{width: 75%;}
-        .col-md-10{width: 883.333333%;}
-        .col-md-11{width: 91.666666%;}
-        .col-md-12{width: 100%;}
-        }
-
-        @media screen and (min-width:996px){
-        .col-lg-1{width: 8.333333%;}
-        .col-lg-2{width: 16.666666%;}
-        .col-lg-3{width: 25%;}
-        .col-lg-4{width: 33.333333%;}
-        .col-lg-5{width: 41.666666%;}
-        .col-lg-6{width: 50%;}
-        .col-lg-7{width: 58.333333%;}
-        .col-lg-8{width: 66.666666%;}
-        .col-lg-9{width: 75%;}
-        .col-lg-10{width: 883.333333%;}
-        .col-lg-11{width: 91.666666%;}
-        .col-lg-12{width: 100%;}
-        }
-
-        @media screen and (min-width:1200px){
-        .col-xl-1{width: 8.333333%;}
-        .col-xl-2{width: 16.666666%;}
-        .col-xl-3{width: 25%;}
-        .col-xl-4{width: 33.333333%;}
-        .col-xl-5{width: 41.666666%;}
-        .col-xl-6{width: 50%;}
-        .col-xl-7{width: 58.333333%;}
-        .col-xl-8{width: 66.666666%;}
-        .col-xl-9{width: 75%;}
-        .col-xl-10{width: 883.333333%;}
-        .col-xl-11{width: 91.666666%;}
-        .col-xl-12{width: 100%;}
-        }
     </style>
     </head>
 
 <body>
-        <!-- 不要用數字和縮寫作為命名 -->
-        <article>
-            <div class="grant">
-                <div class="group">
-                    <a href="#">你開業，我補貼! 價值超過10萬補助與你齊心抗疫&#128073;</a>
-                    <div class="close">
-                        <a href="#">&#10006;</a>
-                    </div>
-                </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Link</a>
+              </li>
+            </ul>
+            <div class="my-btn">
+                <a href="#" class="btn btn-primary rounded-pill">
+                    免費試用
+                </a>
             </div>
-            <div class="icon_help_sign">
-                <div class="package">
-                    <span class="section">
-                        <a href="#" class="icon"><i class="fa-solid fa-globe"></i></a>
-                        <a href="#" class="center">幫助中心</a>
-                        <a href="#">登入網店</a>
-                    </span>
-                </div>
-            </div>
-            <div class="header">
-                <div class="bundle">
-                    <div class="pack">
-                        <span class="logo">
-                            <h1>
-                                <a href="#"><img src="https://img.shoplineapp.com/media/image_clips/60811bb98a60d74a03808d4d/original.png?1619073977" alt="ShopLine">
-                                </a>
-                            </h1>
-                        </span>
-                        <nav>
-                            <a href="#">開店服務</a>
-                            <a href="#">方案費用</a>
-                            <a href="#">客戶案例</a>
-                            <a href="#">開店說明會</a>
-                            <a href="#">開店諮詢</a>
-                            <a href="#">更多解決方案</a>
-                            <a href="#">其他資源</a>
-                        </nav>
-                        <span class="btn_free">
-                            <a href="">免費試用</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <section>
-                <div class="main">
-                    <div class="wrap">
-                        <span class="text">
-                            <h2>想在哪開店創業？<br></h2>
-                            <h2 class="two">門市必備零售POS系統</h2>
-                            <p>超過 35 萬品牌使用！從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</p>
-                            <input type="text" placeholder="請在此輸入電子信箱(可隨時更換)" name="" id="email">
-                            <a href="#">免費試用</a>
-                        </span>
-                        <span class="pic">
-                            <img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/6191b397e9f2f00026722389/505x.webp?source_format=png" alt="">
-                        </span>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="about">
-                    <h2>單一平台就能助你<br>
-                        在全通路輕鬆開店創業</h2>
+          </div>
+        </div>
+      </nav>
+      <!-- carousel-inner -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://picsum.photos/300/200/?random=10" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://picsum.photos/300/200/?random=10" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://picsum.photos/300/200/?random=10" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-12 text-center py-5">
+                <h2>單一平台就能助你<br>
+                    在全通路輕鬆開店創業</h2>
                     <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，
                         並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！</p>
-                </div>
-            </section>
-            <section>
-                <div class="group">
-                    <div class="row">
-                        <span class="pic">
-                            <img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png" alt="">
-                        </span>
-                        <span class="text">
-                            <h2>免寫程式、多款版型<br>
-                                輕鬆打造全能電商網站</h2>
-                            <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
-                            <span class="list">
-                                <ul>
-                                    <li><i class="fa-solid fa-circle-check"></i>豐富版型主題與字型搭配</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>RWD 響應式網頁設計</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>獨有網址 ＆ SSL 安全憑證</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>SEO 搜尋引擎優化</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>一頁商店</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>開放 HTML／CSS 編輯</li>
-                                </ul>
-                            </span>
-                            <a href="#">看看開店秘訣 &rarr;</a>
-                        </span>
-                    </div>
-                    <div class="row">
-                        <span class="pic">
-                            <img src="https://img.shoplineapp.com/media/image_clips/60a4d354a8bff100235bea59/original.png?1621414740" alt="">
-                        </span>
-                        <span class="text">
-                            <h2>支持海內外電商<br>
-                                金流、物流一次搞定</h2>
-                            <p>支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送貨服務，加速消費者完成下單交易，大幅降低購物車放棄率！</p>
-                            <span class="list">
-                                <ul>
-                                    <li><i class="fa-solid fa-circle-check"></i>線上信用卡刷卡</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>第三方金流／行動支付整合</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>超商代碼／條碼繳費</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>多溫層宅配並指定運費</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>超商／宅配貨到付款</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>發票開立與串接</li>
-                                </ul>
-                            </span>
-                            <a href="#">了解更多金物流 &rarr;</a>
-                        </span>
-                    </div>
-                    <div class="row">
-                        <span class="pic">
-                            <img src="https://img.shoplineapp.com/media/image_clips/60a4d354df356c0012a8a223/original.png?1621414740" alt="">
-                        </span>
-                        <span class="text">
-                            <h2>刺激下單，創造回購<br>行銷導流、促購模組任你玩</h2>
-                            <p>多元優惠活動、會員集客機制、網紅分潤以及直播購物等豐富功能，將電商行銷玩法一網打盡，助你成功優化行銷活動成效，刺激顧客下單、吸引鐵粉回購！</p>
-                            <span class="list">
-                                <ul>
-                                    <li><i class="fa-solid fa-circle-check"></i>超過 20 種優惠促銷功能</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>社群直播購物系統</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>會員分級／點數／購物金</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>Facebook／Google／LINE 廣告追蹤</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>Instagram 購物功能</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>Facebook／Instagram／LINE 對話式購物</li>
-                                </ul>
-                            </span>
-                            <a href="#">看更多優惠模組 &rarr;</a>
-                        </span>
-                    </div>
-                    <div class="row">
-                        <span class="pic">
-                            <img src="https://img.shoplineapp.com/media/image_clips/60a4d3540289ef002f2150cb/original.png?1621414740" alt="">
-                        </span>
-                        <span class="text">
-                            <h2>O2O 全通路無縫整併
-                                輕鬆管理網店、門市以及其他通路</h2>
-                            <p>不論是網店拓展門市，還是門市想發展網路生意，從商品、庫存、訂單等各項虛實店舖的資料都能完善整併，輕鬆實現全通路會員經營到多店營運。</p>
-                            <span class="list">
-                                <ul>
-                                    <li><i class="fa-solid fa-circle-check"></i>門市 POS 系統</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>線上線下會員／商品／庫存整合</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>門市快速集客工具</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>O2O 即時銷售報表分析</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>進銷庫存／調撥／多店管理</li>
-                                    <li><i class="fa-solid fa-circle-check"></i>串接 Shopee 蝦皮購物庫存</li>
-                                </ul>
-                            </span>
-                            <a href="#">了解更多全通路整合 &rarr;</a>
-                        </span>
-                    </div>
-                </div>
-            </section>
-
+            </div>
+        </div>
+        <div class="row py-5 align-items-md-center flex-row-reverse ">
+            <div class="col-12 col-md-6"><img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png"></div>
+            <div class="col-12 col-md-6">
+                <h3 class="fs-2">免寫程式、多款版型<br>
+                    輕鬆打造全能電商網站
+                </h3>
+                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+            </div>
+        </div>    
+        <div class="row py-5 align-items-md-center  ">
+            <div class="col-12 col-md-6"><img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png"></div>
+            <div class="col-12 col-md-6">
+                <h3 class="fs-2">免寫程式、多款版型<br>
+                    輕鬆打造全能電商網站
+                </h3>
+                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+            </div>
+        </div>    
+        <div class="row py-5 align-items-md-center flex-row-reverse ">
+            <div class="col-12 col-md-6"><img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png"></div>
+            <div class="col-12 col-md-6">
+                <h3 class="fs-2">免寫程式、多款版型<br>
+                    輕鬆打造全能電商網站
+                </h3>
+                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+            </div>
+        </div>    
+        <div class="row py-5 align-items-md-center  ">
+            <div class="col-12 col-md-6"><img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png"></div>
+            <div class="col-12 col-md-6">
+                <h3 class="fs-2">免寫程式、多款版型<br>
+                    輕鬆打造全能電商網站
+                </h3>
+                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+            </div>
+        </div>    
+        
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
